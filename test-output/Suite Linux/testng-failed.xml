@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Suite Linux]" guice-stage="DEVELOPMENT">
+  <test thread-count="2" parallel="tests" name="Test Windows10(failed)">
+    <groups>
+      <run>
+        <include name="windows"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.freecrm.smoketests.SmokeTest2Linux">
+        <methods>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- com.freecrm.smoketests.SmokeTest2Linux -->
+    </classes>
+  </test> <!-- Test Windows10(failed) -->
+  <test thread-count="2" parallel="tests" name="Test Linux Ubuntu(failed)">
+    <groups>
+      <run>
+        <include name="linux"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.freecrm.smoketests.SmokeTest2Linux">
+        <methods>
+          <include name="test4"/>
+        </methods>
+      </class> <!-- com.freecrm.smoketests.SmokeTest2Linux -->
+    </classes>
+  </test> <!-- Test Linux Ubuntu(failed) -->
+</suite> <!-- Failed suite [Suite Linux] -->
